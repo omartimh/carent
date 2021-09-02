@@ -1,0 +1,226 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} header .barContainer {
+    width: 100%;
+    padding: 0.5em;
+    color: silver;
+    background: #000;
+} header .barWrapper {
+    padding: 0 1em;
+    margin: auto;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.1rem;
+} header a {
+    color: silver;
+} header .bannerContainer {
+    width: 100%;
+    padding: 4em 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF;
+} header .bannerWrapper {
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} header .bannerWrapper img {
+    width: 300px;
+} header .btn {
+    margin-right: .5em;
+    padding: .5em 1em;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border: 1px solid #FFF;
+    border-radius: 1px;
+    transition: all 0.3s;
+} header .btn:hover {
+    color: #000;
+    background: #FFF;
+    transition: 0.3s ease-in-out;
+}
+
+nav {
+
+} nav .navContainer {
+    width: 100%;
+    background: #424242;
+} nav .navWrapper {
+    margin: auto;
+    width: 1000px;
+    display: flex;
+    justify-content: flex-end;
+} nav .navWrapper ul {
+    display: flex;
+    align-items: center;
+} nav .navWrapper ul li {
+    padding: 1em 0;
+} nav .navWrapper ul li a {
+    padding: 1em;
+    color: #FFF;
+    transition: all 0.3s;
+} nav .navWrapper ul li a:hover {
+    background: #313131;
+    transition: 0.3s ease-in-out;
+}
+
+.footer-distributed {
+    background-color: #000;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    
+} .footerWrapper {
+    margin: auto;
+    width: 1400px;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+} .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+} .footer-distributed .footer-left {
+    width: 40%;
+} .footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px "Cookie", cursive;
+    margin: 0;
+} .footer-distributed h3 span {
+    color: #5383d3;
+} .footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+} .footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+} .footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+} .footer-distributed .footer-center {
+    width: 35%;
+} .footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+} .footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+} .footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+} .footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+} .footer-distributed .footer-center p a {
+    color: #5383d3;
+    text-decoration: none;
+} .footer-distributed .footer-right {
+    width: 20%;
+} .footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+} .footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+} .footer-distributed .footer-icons {
+    margin-top: 25px;
+} .footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.homeContainer {
+    width: 100%;
+    min-height: 100vh;
+    background: #D7D6BA;
+} .homeWrapper {
+    margin: auto;
+    width: 1000px;
+} .homeContent1 {
+    padding-top: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} .homeContent1 span {
+    padding: 3em 1em;
+    border-radius: 1px;
+    box-shadow: 1px 1px 5px #333;
+    color: #212121;
+    background: #5383d3;
+} .homeContent1 span h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+} .homeContent1 span h2 {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #923e07;
+} .homeContent1 img {
+    width: 50%;
+}  .homeContent2 {
+    padding: 5em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} .homeContent2 .card {
+    width: 30%;
+    border-radius: 3px;
+    background: #FFF;
+    cursor: pointer;
+    transition: all 0.3s;
+} .homeContent2 .card:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+} .homeContent2 .card img {
+    padding: 0 2em;
+    width: 100%;
+    height: 300px;
+    border-radius: 3px 3px 0px 0px;
+    background-size: cover;
+} .homeContent2 .card p {
+    padding: 0 2em 1em 2em;
+    line-height: 1.7em;
+}
