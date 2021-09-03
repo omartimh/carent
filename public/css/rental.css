@@ -1,0 +1,195 @@
+.rentalBanner {
+    position: relative;
+    width: 100%;
+    padding: 17em 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/banner2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF;
+    display: grid;
+    place-items: center;
+} .rentalTitle {
+    position: absolute;
+    font-size: 6rem;
+    font-weight: 300;
+    cursor: default;
+}
+
+.rentalContainer {
+    min-height: 100vh;
+} .rentalWrapper {
+    margin: auto;
+    width: 1000px;
+    position: relative;
+} .rentOffer {
+    position: absolute;
+    top: -2.3em;
+    text-decoration: underline;
+    color: #FFB400;
+} .landing {
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} .landing h1 {
+    margin-bottom: 1em;
+    font-size: 3rem;
+    cursor: default;
+    color: #7E7E7E;
+}
+
+.rentalGrid {
+    padding: 3em 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3em;
+} .rentalCard {
+    border-radius: 3px;
+    background: #EEE;
+} .rentalCarImg {
+    position: relative;
+} .rentalCarImg::after {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100.1%;
+    height: 300px;
+    border-radius: 3px 3px 0 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+} .rentalCarImg img {
+    z-index: -1;
+    width: 100.1%;
+    height: 300px;
+    border-radius: 3px 3px 0 0;
+} .rentalCarImg h3 {
+    z-index: 2;
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    color: #FFF;
+} .rentalCarDesc {
+    padding: 1em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+} .rentalCarDesc table {
+    width: 100%;
+} .rentalCarDesc table tr {
+    height: 30px;
+} .rentalCarDesc table tr th {
+    text-align: left;
+    color: #263238;
+}  .rentalCarDesc table tr td {
+    text-transform: capitalize;
+    color: #424242;
+} .btn-book {
+    padding: .1em .5em;
+    margin: 1em 0 .5em 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 3px;
+    opacity: 1;
+    color: #FFF;
+    background: #263238;
+    transition: all 0.3s;
+} .btn-booked {
+    padding: .1em .5em;
+    margin: 1em 0 .5em 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 3px;
+    opacity: 1;
+    color: #FFF;
+    background: #00C853;
+    transition: all 0.3s;
+}  .btn-delete {
+    z-index: 4;
+    padding: .2em .3em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: 400;
+    border-radius: 3px;
+    color: #FFF;
+    background: crimson;
+    opacity: .5;
+} .btn-book:hover, .btn-booked:hover, .btn-delete:hover{
+    opacity: 0.9;
+    transition: 0.3s ease-in-out;
+}
+
+.rentalForm {
+    background: #EEE;
+} .rentalForm form {
+    z-index: 1;
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    min-height: 100vh;
+} .rentalForm form::after{
+    content: "";
+    position: absolute;
+    top: 9em;
+    right: 0;
+    z-index: -1;
+    background-image: url("../images/rent.svg");
+    background-size: cover;
+    width: 478px;
+    height: 400px;
+} .rentalForm form h2 {
+    padding: 1em 1em;
+    font-size: 1.7rem;
+    font-weight: 800;
+    text-align: right;
+    border-bottom: 3px solid #9C9C9C;
+    cursor: default;
+} .rentalForm form label {
+    margin-bottom: 3px;
+    display: block;
+    width: fit-content;
+    font-weight: 600;
+    cursor: pointer;
+} .rentalForm form input {
+    padding: .3em;
+    border: 1px solid #9C9C9C;
+    border-radius: 2px;
+    cursor: pointer;
+} .rentalForm form input:focus {
+    border-color: #1565C0;
+    box-shadow: 0 0 3px #1E88E5;
+    cursor: text;
+} .rentalForm form select {
+    padding: .3em;
+    width: 300px;
+    border: 1px solid #9C9C9C;
+    border-radius: 2px;
+    cursor: pointer;
+} .rentalForm form select:focus {
+    border-color: #1565C0;
+    box-shadow: 0 0 3px #1E88E5;
+    cursor: text;
+} .rentalForm form button {
+    padding: .7em 3em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-radius: 2px;
+    cursor: pointer;
+    color: #FFF;
+    background: #304FFE;
+    opacity: 1;
+    transition: all 0.3s;
+} .rentalForm form button:hover {
+    opacity: 0.9;
+    transition: 0.3s ease-in-out;
+}

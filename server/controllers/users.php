@@ -24,7 +24,6 @@
         }
     }
 
-
     if (isset($_REQUEST['login'])) {
         $email = $_REQUEST['email'];
         $password = $_REQUEST['password'];
@@ -32,11 +31,11 @@
         $user = $objModel->getUser($email);
         $objView = new Users();
         if (!$user) {
-            $message = "Invalid User!";
+            $message = "Invalid User";
             $objView->login($message);
         } else {
             if ($password != $user['password']) {
-                $message = "Incorrect Creditentials!";
+                $message = "Incorrect Credentials";
                 $objView->login($message);
             } else {
                 session_start();

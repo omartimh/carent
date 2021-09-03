@@ -1,7 +1,7 @@
 <footer class="footer-distributed">
     <div class="footerWrapper">
         <div class="footer-left">
-            <a href="#"><img src="public/images/caRent.png" alt="caRent" width=175></a>
+            <a href="<?php echo URLROOT; ?>/"><img src="<?php echo URLROOT; ?>/public/images/caRent.png" alt="caRent" width=175></a>
             <p class="footer-links">
                 <a href="#">Home</a> ·
                 <a href="#">About</a> ·

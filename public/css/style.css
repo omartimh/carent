@@ -1,14 +1,9 @@
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-} header .barContainer {
+.barContainer {
     width: 100%;
     padding: 0.5em;
     color: silver;
     background: #000;
-} header .barWrapper {
+} .barWrapper {
     padding: 0 1em;
     margin: auto;
     width: 1000px;
@@ -16,8 +11,15 @@ header {
     align-items: center;
     justify-content: flex-end;
     font-size: 1.1rem;
-} header a {
+} .barWrapper a {
     color: silver;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 } header .bannerContainer {
     width: 100%;
     padding: 4em 0;
@@ -43,6 +45,9 @@ header {
     letter-spacing: 5px;
     border: 1px solid #FFF;
     border-radius: 1px;
+    color: #FFF;
+    background: none;
+    cursor: pointer;
     transition: all 0.3s;
 } header .btn:hover {
     color: #000;
@@ -50,9 +55,53 @@ header {
     transition: 0.3s ease-in-out;
 }
 
-nav {
+.overlay {
+    display: none;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+} .overlay form {
+    padding: 3em;
+    width: 40%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1px;
+    background: #FFF;
+} .overlay form h2 {
+    padding-bottom: 1em;
+    text-align: center;
+} .overlay form div {
+    padding: .5em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} .overlay form div label{
+    width: 25%;
+} .overlay form div input{
+    padding: .5em;
+    background: #EEE;
+} .overlay form div select{
+    padding: .5em;
+    width: 100%;
+    cursor: pointer;
+    background: #EEE;
+} .overlay form div button{
+    padding: .5em;
+    width: 20.5%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 1px;
+    cursor: pointer;
+    color: #FFF;
+    background: #0D47A1;
+}
 
-} nav .navContainer {
+nav .navContainer {
     width: 100%;
     background: #424242;
 } nav .navWrapper {
@@ -79,7 +128,6 @@ nav {
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     width: 100%;
-    
 } .footerWrapper {
     margin: auto;
     width: 1400px;
@@ -169,58 +217,4 @@ nav {
     line-height: 35px;
     margin-right: 3px;
     margin-bottom: 5px;
-}
-
-.homeContainer {
-    width: 100%;
-    min-height: 100vh;
-    background: #D7D6BA;
-} .homeWrapper {
-    margin: auto;
-    width: 1000px;
-} .homeContent1 {
-    padding-top: 3em;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-} .homeContent1 span {
-    padding: 3em 1em;
-    border-radius: 1px;
-    box-shadow: 1px 1px 5px #333;
-    color: #212121;
-    background: #5383d3;
-} .homeContent1 span h1 {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
-} .homeContent1 span h2 {
-    text-align: center;
-    font-size: 1.7rem;
-    font-weight: 500;
-    color: #923e07;
-} .homeContent1 img {
-    width: 50%;
-}  .homeContent2 {
-    padding: 5em 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-} .homeContent2 .card {
-    width: 30%;
-    border-radius: 3px;
-    background: #FFF;
-    cursor: pointer;
-    transition: all 0.3s;
-} .homeContent2 .card:hover {
-    transform: scale(1.05);
-    transition: 0.3s ease-in-out;
-} .homeContent2 .card img {
-    padding: 0 2em;
-    width: 100%;
-    height: 300px;
-    border-radius: 3px 3px 0px 0px;
-    background-size: cover;
-} .homeContent2 .card p {
-    padding: 0 2em 1em 2em;
-    line-height: 1.7em;
 }

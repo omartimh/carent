@@ -1,4 +1,5 @@
 <?php require_once './server/views/components/head.php'; ?>
+<?php require_once './server/views/components/bar.php'; ?>
 <?php require_once './server/views/components/header.php'; ?>
 <?php require_once './server/views/components/nav.php'; ?>
 
@@ -7,9 +8,9 @@
         <div class="homeContent1">
             <span>
                 <h1>A wide range of budget cars</h1>
-                <h2>offered at great value</h2>
+                <h2>offered for a great value</h2>
             </span>
-            <img src="public/images/cars.jpg" alt="car"/>
+            <img src="<?php echo URLROOT; ?>/public/images/cars.jpg" alt="car"/>
         </div>
         <div class="homeContent2">
             <div class="card">

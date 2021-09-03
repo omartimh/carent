@@ -1,0 +1,70 @@
+.formContainer {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #212121;
+} .formContainer form{
+    position: relative;
+    padding: 2em;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    border-radius: 2px;
+    background: #FFF;
+} .formContainer form .logo {
+    position: absolute;
+    top: -5em;
+    width: 270px;
+    left: calc(50% - 135px);
+} .formContainer form h2{
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 800;
+    margin-bottom: 1.5em;
+    cursor: default;
+} .formContainer form label{
+    padding: 0 .3em;
+    position: relative;
+    top: .5em;
+    left: .5em;
+    display: block;
+    width: fit-content;
+    cursor: pointer;
+    background: #FFF;
+} .formContainer form input{
+    padding: 1em 1em .5em 1em;
+    border: 1px solid #3E3E3E;
+    border-radius: 2px;
+    cursor: pointer;
+} .formContainer form input:focus{
+    border-color: #1565C0;
+    box-shadow: 0 0 3px #1E88E5;
+    cursor: text;
+} .formContainer form button{
+    padding: .7em;
+    margin: 1.5em 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+    color: #FFF;
+    background: #304FFE;
+    opacity: 1;
+    transition: all 0.3s;
+} .formContainer form button:hover{
+    opacity: 0.9;
+    transition: 0.3s ease-in-out;
+} .formContainer form .switch {
+    text-align: center;
+    cursor: default;
+} .formContainer .errorMessage {
+    position: absolute;
+    top: 5em;
+    padding: .1em 0;
+    width: calc(100% - 4em);
+    text-align: center;
+    color: crimson;
+    background: #FFEBEE;
+    border: 1px solid crimson;
+}
